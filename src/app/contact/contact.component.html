@@ -1,23 +1,27 @@
-<div class="col-md-12">
-    <h3>Formulaire de contact</h3>
-    <p>Pour me contacter, merci de remplir le formulaire ci-dessous.</p>
-    <form action="index.html" method="post">
-        <div class="mb-3">
-        <label for="nom" class="form-label">Votre nom (*)</label>
-        <input type="text" class="form-control" id="nom" required>
-      </div>
-        <div class="mb-3">
-        <label for="email" class="form-label">Votre email (*)</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-        <div class="mb-3">
-        <label for="phone" class="form-label">Votre numéro de téléphone (*)</label>
-        <input type="tel" class="form-control" id="phone" required>
-      </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Votre message (*)</label>
-            <textarea rows="4" cols="50" class="form-control" id="message" required></textarea>
+<app-header></app-header>
+<main>
+  <div class="col-md-12 col-lg-6">
+      <h3>Formulaire de contact</h3>
+      <p>Pour me contacter, merci de remplir le formulaire ci-dessous.</p>
+      <form action="index.html" method="post">
+          <div class="mb-3">
+          <label for="nom" class="form-label">Votre nom (*)</label>
+          <input type="text" class="form-control" id="nom" required>
         </div>
-        <button type="submit" class="btn btn-info text-light">Envoyer</button>
-    </form>
-</div>
+          <div class="mb-3">
+          <label for="email" class="form-label">Votre email (*)</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+          <div class="mb-3">
+          <label for="phone" class="form-label">Votre numéro de téléphone (*)</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+          <div class="mb-3">
+              <label for="message" class="form-label">Votre message (*)</label>
+              <textarea rows="4" cols="50" class="form-control" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-info text-light">Envoyer</button>
+      </form>
+  </div>
+</main>
+<app-footer></app-footer>
