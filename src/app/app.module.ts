@@ -8,6 +8,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { SortByPricePipe } from './sort-by-price.pipe';
+import { FilterByNamePipe } from './filter-by-name.pipe';
+import { FormsModule } from '@angular/forms';
+import { FigureCardComponent } from './figure-card/figure-card.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +21,16 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    SortByPricePipe,
+    FilterByNamePipe,
+    FigureCardComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
